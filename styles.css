@@ -591,11 +591,14 @@ h1, h2, h3, h4 {
   .steps { flex-wrap: wrap; row-gap: 32px; }
   .steps::before { display: none; }
   .step { flex: 0 0 calc(50% - 10px); }
-  .hero-copy { max-width: 100%; }
+  .hero-copy { max-width: 100%; text-align: center; }
+  .hero-copy .badge { margin-left: auto; margin-right: auto; }
+  .hero-copy .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-title { font-size: clamp(2.2rem, 8vw, 2.8rem); }
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn-lg { padding: 11px 20px; font-size: 0.9rem; }
-  .hero-stats { gap: 20px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn-lg { padding: 11px 20px; font-size: 0.9rem; width: auto; }
+  .hero-stats { gap: 20px; justify-content: center; }
+  .stat { align-items: center; }
   .footer-inner { flex-direction: column; gap: 32px; }
   .hero-browser-mockup .dash-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
   .hero-browser-mockup .dash-stat { padding: 12px 14px; }

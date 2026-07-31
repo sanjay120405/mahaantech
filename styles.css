@@ -552,6 +552,12 @@ h1, h2, h3, h4 {
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
+  .header-inner { position: relative; justify-content: flex-end; }
+  .header-inner .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .main-nav {
     display: flex; flex-direction: column; position: absolute; top: 74px; left: 0; right: 0;
     background: var(--white); box-shadow: var(--shadow-md); padding: 16px 24px 24px; gap: 18px;
@@ -615,7 +621,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 480px) {
   .header-btn { display: none; }
-  .main-nav__cta {
+  .main-nav a.main-nav__cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -627,6 +633,7 @@ h1, h2, h3, h4 {
     font-size: 0.95rem;
     margin-top: 6px;
   }
+  .main-nav a.main-nav__cta:hover { color: var(--white); }
 }
 
 @media (max-width: 380px) {

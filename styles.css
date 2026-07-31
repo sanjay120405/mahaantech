@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
   object-fit: cover;
 }
 
-.logo-text strong { color: var(--acid-berry); font-weight: 700; }
+.logo-text strong { color: inherit; font-weight: inherit; }
 
 .main-nav { display: flex; gap: 32px; }
 
@@ -539,7 +539,7 @@ h1, h2, h3, h4 {
 .footer-inner { display: flex; justify-content: space-between; gap: 60px; flex-wrap: wrap; padding-bottom: 48px; }
 
 .footer-brand .logo { color: var(--ink); margin-bottom: 14px; }
-.footer-brand .logo-text strong { color: var(--acid-berry); }
+.footer-brand .logo-text strong { color: inherit; }
 .footer-brand p { font-size: 0.9rem; max-width: 260px; font-family: var(--font-body); }
 
 .footer-links { display: flex; gap: 60px; flex-wrap: wrap; }

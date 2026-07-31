@@ -206,7 +206,7 @@ h1, h2, h3, h4 {
 .badge-icon { display: inline-block; color: var(--acid-berry-light); }
 
 .hero-title {
-  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-size: clamp(2.3rem, 3.6vw, 3.4rem);
   text-transform: uppercase;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
@@ -594,7 +594,7 @@ h1, h2, h3, h4 {
   .hero-copy { max-width: 100%; text-align: center; }
   .hero-copy .badge { margin-left: auto; margin-right: auto; }
   .hero-copy .hero-subtitle { margin-left: auto; margin-right: auto; }
-  .hero-title { font-size: clamp(2.2rem, 8vw, 2.8rem); }
+  .hero-title { font-size: clamp(2.5rem, 8vw, 3.1rem); }
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn-lg { padding: 11px 20px; font-size: 0.9rem; width: auto; }
   .hero-stats { gap: 20px; justify-content: center; }

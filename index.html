@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahaan Tech — AI Automation for Business</title>
 <meta name="description" content="Mahaan Tech builds AI automation systems that run your business smarter — workflow automation, AI chatbots, CRM automation and data intelligence, all from one platform.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23014AAD%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23F2F2F2%22 text-anchor=%22middle%22>M</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23CC6B0C%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23fdf6ee%22 text-anchor=%22middle%22>M</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,10 +30,11 @@
       <a href="#about">About</a>
       <a href="#testimonials">Results</a>
       <a href="#contact">Contact</a>
+      <a href="tel:+919655255682" class="main-nav__cta">Book a Demo</a>
     </nav>
 
     <div class="header-actions">
-      <a href="tel:+919655255682" class="btn btn-primary header-btn">Book a Demo</a>
+      <a href="tel:+919655255682" class="btn btn-dark header-btn">Book a Demo</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -42,164 +44,312 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
-  <div class="container hero-inner">
-    <div class="badge">
-      <span class="badge-icon">✦</span>
-      AI-Powered Business Management
-    </div>
-
-    <h1 class="hero-title">
-      Run Your <br>
-      Business <span class="gradient-text">Smarter</span>
-    </h1>
-
-    <p class="hero-subtitle">
-      Complete AI automation with intelligent workflows, 24/7 smart chatbots,
-      automated data reporting, and CRM &amp; sales automation — all from one
-      powerful platform.
-    </p>
-
-    <div class="hero-actions">
-      <a href="tel:+919655255682" class="btn btn-primary btn-lg">Get Started Free</a>
-      <a href="#how-it-works" class="btn btn-outline btn-lg">See How It Works</a>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-number">50+</span>
-        <span class="stat-label">Businesses Automated</span>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge">
+        <span class="badge-icon">✦</span>
+        AI Automation for Business
       </div>
-      <div class="stat">
-        <span class="stat-number">30%</span>
-        <span class="stat-label">Avg. Cost Reduction</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">AI Support Coverage</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Client Satisfaction</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="browser-mockup">
-      <div class="browser-bar">
-        <div class="browser-dots"><span></span><span></span><span></span></div>
-        <div class="browser-url"><span class="lock">🔒</span> app.mahaantech.in/dashboard</div>
+      <h1 class="hero-title">
+        We Build Automation<br>
+        That Runs Your<br>
+        <span class="accent-word">Business Smarter</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        We blend AI, workflow engineering, and real operations know-how to
+        build automation systems that save time and grow revenue.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:+919655255682" class="btn btn-dark btn-lg">Get Started</a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg">See How It Works</a>
       </div>
-      <div class="browser-body">
-        <div class="dash-stats">
-          <div class="dash-stat">
-            <div class="dash-stat-icon">💰</div>
-            <span class="dash-stat-label">Today's Sales</span>
-            <strong class="dash-stat-value">₹48,250</strong>
-            <span class="dash-stat-change">+12.5%</span>
-          </div>
-          <div class="dash-stat">
-            <div class="dash-stat-icon">🛒</div>
-            <span class="dash-stat-label">Orders Today</span>
-            <strong class="dash-stat-value">24</strong>
-            <span class="dash-stat-change">Active</span>
-          </div>
-          <div class="dash-stat">
-            <div class="dash-stat-icon">📦</div>
-            <span class="dash-stat-label">Low Stock Items</span>
-            <strong class="dash-stat-value">15</strong>
-            <span class="dash-stat-change warn">Needs Reorder</span>
-          </div>
-          <div class="dash-stat">
-            <div class="dash-stat-icon">⚠️</div>
-            <span class="dash-stat-label">Pending Deliveries</span>
-            <strong class="dash-stat-value">7</strong>
-            <span class="dash-stat-change warn">In Transit</span>
-          </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Businesses Automated</span>
         </div>
-
-        <div class="dash-chart">
-          <div class="dash-bar"><span class="bar-top" style="height:38%"></span><span class="bar-bottom" style="height:22%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:58%"></span><span class="bar-bottom" style="height:26%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:34%"></span><span class="bar-bottom" style="height:20%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:70%"></span><span class="bar-bottom" style="height:24%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:44%"></span><span class="bar-bottom" style="height:22%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:78%"></span><span class="bar-bottom" style="height:28%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:60%"></span><span class="bar-bottom" style="height:24%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:68%"></span><span class="bar-bottom" style="height:26%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:40%"></span><span class="bar-bottom" style="height:22%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:86%"></span><span class="bar-bottom" style="height:30%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:52%"></span><span class="bar-bottom" style="height:24%"></span></div>
-          <div class="dash-bar"><span class="bar-top" style="height:64%"></span><span class="bar-bottom" style="height:26%"></span></div>
+        <div class="stat">
+          <span class="stat-number">30%</span>
+          <span class="stat-label">Avg. Cost Reduction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">AI Support</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
+    <div class="hero-visual">
+      <div class="browser-mockup hero-browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url"><span class="lock">🔒</span> app.mahaantech.in/dashboard</div>
+        </div>
+        <div class="browser-body">
+          <div class="dash-stats">
+            <div class="dash-stat">
+              <div class="dash-stat-icon">💰</div>
+              <span class="dash-stat-label">Today's Sales</span>
+              <strong class="dash-stat-value">₹48,250</strong>
+              <span class="dash-stat-change">+12.5%</span>
+            </div>
+            <div class="dash-stat">
+              <div class="dash-stat-icon">🛒</div>
+              <span class="dash-stat-label">Orders Today</span>
+              <strong class="dash-stat-value">24</strong>
+              <span class="dash-stat-change">Active</span>
+            </div>
+            <div class="dash-stat">
+              <div class="dash-stat-icon">📦</div>
+              <span class="dash-stat-label">Low Stock Items</span>
+              <strong class="dash-stat-value">15</strong>
+              <span class="dash-stat-change warn">Needs Reorder</span>
+            </div>
+            <div class="dash-stat">
+              <div class="dash-stat-icon">⚠️</div>
+              <span class="dash-stat-label">Pending Deliveries</span>
+              <strong class="dash-stat-value">7</strong>
+              <span class="dash-stat-change warn">In Transit</span>
+            </div>
+          </div>
 
-<!-- ===== LOGOS / TRUST STRIP =====
-<section class="trust-strip">
-  <div class="container">
-    <p class="trust-label">Trusted by growing teams across industries</p>
-    <div class="trust-logos">
-      <span>RetailWorks</span>
-      <span>NovaClinics</span>
-      <span>Finlytics</span>
-      <span>Urban Realty</span>
-      <span>BrightCommerce</span>
+          <div class="dash-chart">
+            <div class="dash-bar"><span class="bar-top" style="height:38%"></span><span class="bar-bottom" style="height:22%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:58%"></span><span class="bar-bottom" style="height:26%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:34%"></span><span class="bar-bottom" style="height:20%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:70%"></span><span class="bar-bottom" style="height:24%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:44%"></span><span class="bar-bottom" style="height:22%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:78%"></span><span class="bar-bottom" style="height:28%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:60%"></span><span class="bar-bottom" style="height:24%"></span></div>
+            <div class="dash-bar"><span class="bar-top" style="height:68%"></span><span class="bar-bottom" style="height:26%"></span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
--->
 
-
-<!-- ===== SERVICES ===== -->
+<!-- ===== SERVICES (BENTO) ===== -->
 <section class="services" id="services">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What We Do</span>
-      <h2>AI Automation Built for Every Part of Your Business</h2>
-      <p>From first customer contact to back-office reporting, Mahaan Tech
-        connects AI to the systems you already use.</p>
+    <div class="services-head">
+      <div>
+        <span class="eyebrow">Our Solutions</span>
+        <h2>Automation Systems<br>Businesses Actually<br><span class="accent-word">Love to Use</span></h2>
+        <p>We partner with growing businesses to build AI automation that
+          removes busywork and grows revenue.</p>
+        <a href="#contact" class="btn btn-dark">View All Solutions <span class="btn-arrow">→</span></a>
+      </div>
     </div>
 
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🤖</div>
-        <h3>AI Chatbots &amp; Support</h3>
+    <div class="bento-grid">
+      <div class="bento-card bento-lg bento-navy">
+        <div class="bento-tag">🤖 Support</div>
+        <h3>AI Chatbots<br>&amp; Support</h3>
         <p>Deploy trained AI agents that answer customer questions, qualify
           leads, and resolve support tickets around the clock.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3>Workflow Automation</h3>
+      <div class="bento-card bento-lg bento-dark">
+        <div class="bento-tag">⚙️ Operations</div>
+        <h3>Workflow<br>Automation</h3>
         <p>Automate repetitive tasks across email, invoicing, scheduling and
           approvals so your team focuses on higher-value work.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3>Data &amp; Reporting</h3>
+      <div class="bento-card bento-lg bento-light">
+        <div class="bento-tag">📊 Insights</div>
+        <h3>Data &amp;<br>Reporting</h3>
         <p>Real-time dashboards and AI-generated reports turn raw business
           data into decisions you can act on immediately.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">📈</div>
-        <h3>CRM &amp; Sales Automation</h3>
+
+      <div class="bento-card bento-md bento-dark">
+        <div class="bento-tag">📈 Sales</div>
+        <h3>CRM &amp; Sales<br>Automation</h3>
         <p>Automatically capture, score and follow up with leads so nothing
           falls through the cracks and deals close faster.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🧑‍💼</div>
-        <h3>Employee Tracking</h3>
+      <div class="bento-card bento-md bento-light">
+        <div class="bento-tag">🧑‍💼 Team</div>
+        <h3>Employee<br>Tracking</h3>
         <p>Monitor attendance, shifts and productivity in real time, with
           automated alerts when something needs your attention.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🛡️</div>
-        <h3>Secure &amp; Scalable</h3>
+      <div class="bento-card bento-md bento-navy">
+        <div class="bento-tag">🛡️ Infra</div>
+        <h3>Secure &amp;<br>Scalable</h3>
         <p>Enterprise-grade infrastructure built to scale with your business,
           with full data privacy and access controls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLATFORM SHOWCASE ===== -->
+<section class="platform-showcase">
+  <div class="container platform-grid">
+    <div class="platform-copy">
+      <h2 class="platform-heading">MAHAAN TECH<br><span class="accent-word">PLATFORM</span></h2>
+      <p class="platform-tagline">Setup. Automate. Scale.</p>
+
+      <ul class="platform-list">
+        <li>
+          <span class="platform-icon platform-icon-navy">🤖</span>
+          <div>
+            <strong>AI Chatbots &amp; Support</strong>
+            <span>Automated answers, day and night</span>
+          </div>
+        </li>
+        <li>
+          <span class="platform-icon platform-icon-orange">⚙️</span>
+          <div>
+            <strong>Workflow Automation</strong>
+            <span>Remove busywork from every team</span>
+          </div>
+        </li>
+        <li>
+          <span class="platform-icon platform-icon-dark">📈</span>
+          <div>
+            <strong>CRM &amp; Sales Automation</strong>
+            <span>Never miss a lead follow-up</span>
+          </div>
+        </li>
+        <li>
+          <span class="platform-icon platform-icon-navy">📊</span>
+          <div>
+            <strong>Data &amp; Reporting</strong>
+            <span>Decisions backed by live data</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="phone-row">
+      <div class="phone-track">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <span class="phone-logo"><span class="logo-mark">M</span> Mahaan Tech</span>
+            <h4>We Build Automation<br>That Runs Your<br><span class="accent-word">Business Smarter</span></h4>
+            <div class="phone-btn phone-btn-dark">Get Started</div>
+            <div class="phone-btn phone-btn-outline">Our Services</div>
+            <div class="phone-stats">
+              <span><strong>50+</strong>Projects</span>
+              <span><strong>30%</strong>Savings</span>
+              <span><strong>24/7</strong>Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Our Services</h4>
+            <p class="phone-section-sub">End-to-end automation that helps your business grow.</p>
+            <div class="phone-list-row"><span class="phone-list-icon">🤖</span><div><strong>AI Chatbots</strong><span>Answer &amp; qualify leads</span></div></div>
+            <div class="phone-list-row"><span class="phone-list-icon">⚙️</span><div><strong>Workflow Automation</strong><span>Cut repetitive tasks</span></div></div>
+            <div class="phone-list-row"><span class="phone-list-icon">📈</span><div><strong>CRM &amp; Sales</strong><span>Close deals faster</span></div></div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Our Results</h4>
+            <p class="phone-section-sub">Real numbers from real automation.</p>
+            <div class="phone-grid-2">
+              <div class="phone-tile phone-tile-navy">💰<strong>₹48,250</strong><span>Today's Sales</span></div>
+              <div class="phone-tile phone-tile-dark">🛒<strong>24</strong><span>Orders Today</span></div>
+              <div class="phone-tile phone-tile-orange">📦<strong>15</strong><span>Low Stock</span></div>
+              <div class="phone-tile phone-tile-light">⚠️<strong>7</strong><span>Deliveries</span></div>
+            </div>
+            <div class="phone-btn phone-btn-dark">View All Projects <span class="btn-arrow">→</span></div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Let's Build Something Great</h4>
+            <p class="phone-section-sub">Have a project in mind? We'd love to hear from you.</p>
+            <div class="phone-input">Your Name</div>
+            <div class="phone-input">Your Email</div>
+            <div class="phone-input phone-input-tall">Your Message</div>
+            <div class="phone-btn phone-btn-dark">Send Message <span class="btn-arrow">→</span></div>
+            <div class="phone-contact"><span>✉️ hello@mahaantech.in</span><span>📞 +91 96552 55682</span><span>📍 Trichy, TN</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-track" aria-hidden="true">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <span class="phone-logo"><span class="logo-mark">M</span> Mahaan Tech</span>
+            <h4>We Build Automation<br>That Runs Your<br><span class="accent-word">Business Smarter</span></h4>
+            <div class="phone-btn phone-btn-dark">Get Started</div>
+            <div class="phone-btn phone-btn-outline">Our Services</div>
+            <div class="phone-stats">
+              <span><strong>50+</strong>Projects</span>
+              <span><strong>30%</strong>Savings</span>
+              <span><strong>24/7</strong>Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Our Services</h4>
+            <p class="phone-section-sub">End-to-end automation that helps your business grow.</p>
+            <div class="phone-list-row"><span class="phone-list-icon">🤖</span><div><strong>AI Chatbots</strong><span>Answer &amp; qualify leads</span></div></div>
+            <div class="phone-list-row"><span class="phone-list-icon">⚙️</span><div><strong>Workflow Automation</strong><span>Cut repetitive tasks</span></div></div>
+            <div class="phone-list-row"><span class="phone-list-icon">📈</span><div><strong>CRM &amp; Sales</strong><span>Close deals faster</span></div></div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Our Results</h4>
+            <p class="phone-section-sub">Real numbers from real automation.</p>
+            <div class="phone-grid-2">
+              <div class="phone-tile phone-tile-navy">💰<strong>₹48,250</strong><span>Today's Sales</span></div>
+              <div class="phone-tile phone-tile-dark">🛒<strong>24</strong><span>Orders Today</span></div>
+              <div class="phone-tile phone-tile-orange">📦<strong>15</strong><span>Low Stock</span></div>
+              <div class="phone-tile phone-tile-light">⚠️<strong>7</strong><span>Deliveries</span></div>
+            </div>
+            <div class="phone-btn phone-btn-dark">View All Projects <span class="btn-arrow">→</span></div>
+          </div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">12:01 <span>●●● 🔋</span></div>
+            <h4 class="phone-section-title">Let's Build Something Great</h4>
+            <p class="phone-section-sub">Have a project in mind? We'd love to hear from you.</p>
+            <div class="phone-input">Your Name</div>
+            <div class="phone-input">Your Email</div>
+            <div class="phone-input phone-input-tall">Your Message</div>
+            <div class="phone-btn phone-btn-dark">Send Message <span class="btn-arrow">→</span></div>
+            <div class="phone-contact"><span>✉️ hello@mahaantech.in</span><span>📞 +91 96552 55682</span><span>📍 Trichy, TN</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -210,7 +360,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">How It Works</span>
-      <h2>Up &amp; Running in <span class="gradient-text">No Time</span></h2>
+      <h2>Up &amp; Running in <span class="accent-word">No Time</span></h2>
       <p>No complex setup, no IT team needed. We design and deploy AI
         automation around your existing workflow — no rip-and-replace, no disruption.</p>
     </div>
@@ -271,7 +421,7 @@
         <li>Dedicated support from real automation engineers</li>
         <li>Transparent pricing with measurable ROI</li>
       </ul>
-      <a href="#contact" class="btn btn-primary btn-lg">Talk to Our Team</a>
+      <a href="#contact" class="btn btn-dark btn-lg">Talk to Our Team</a>
     </div>
     <div class="about-card">
       <div class="about-card-glow"></div>
@@ -342,7 +492,7 @@
     <form class="contact-form" id="contactForm">
       <input type="text" placeholder="Your name" required>
       <input type="email" placeholder="Work email" required>
-      <button type="submit" class="btn btn-primary btn-lg">Book Free Demo</button>
+      <button type="submit" class="btn btn-dark btn-lg">Book Free Demo</button>
     </form>
     <p class="form-note" id="formNote"></p>
   </div>

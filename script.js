@@ -14,12 +14,6 @@ mainNav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => mainNav.classList.remove('open'));
 });
 
-// Sticky header shadow on scroll
-const header = document.getElementById('siteHeader');
-window.addEventListener('scroll', () => {
-  header.style.boxShadow = window.scrollY > 10 ? '0 4px 20px rgba(150,27,43,0.08)' : 'none';
-});
-
 // Contact form (demo only — no backend wired up)
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
@@ -31,7 +25,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // Simple scroll reveal
-const revealTargets = document.querySelectorAll('.service-card, .step, .testimonial-card');
+const revealTargets = document.querySelectorAll('.bento-card, .step, .testimonial-card');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

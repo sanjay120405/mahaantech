@@ -584,13 +584,17 @@ h1, h2, h3, h4 {
 
 @media (max-width: 600px) {
   .hero { padding: 60px 0 50px; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .bento-grid { grid-template-columns: 1fr; }
-  .steps { flex-direction: column; }
-  .step { flex: 1 1 auto; }
+  .testimonials-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .testimonial-card { padding: 18px; }
+  .testimonial-card p { font-size: 0.85rem; }
+  .bento-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .steps { flex-wrap: wrap; row-gap: 32px; }
+  .steps::before { display: none; }
+  .step { flex: 0 0 calc(50% - 10px); }
   .hero-copy { max-width: 100%; }
   .hero-title { font-size: clamp(2.2rem, 8vw, 2.8rem); }
   .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn-lg { padding: 11px 20px; font-size: 0.9rem; }
   .hero-stats { gap: 20px; }
   .footer-inner { flex-direction: column; gap: 32px; }
   .hero-browser-mockup .dash-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -605,7 +609,10 @@ h1, h2, h3, h4 {
   .platform-showcase { padding: 60px 0; }
   .phone-mockup { flex: 0 0 190px; }
   .about-card { padding: 28px; }
-  .bento-card { min-height: 220px; padding: 22px; }
+  .bento-card { min-height: 200px; padding: 16px; }
+  .bento-card h3 { font-size: 1.1rem; }
+  .bento-card p { font-size: 0.78rem; }
+  .bento-tag { font-size: 0.68rem; padding: 5px 10px; }
 }
 
 @media (max-width: 480px) {

@@ -1,3 +1,13 @@
+// Preloader — show logo + wordmark for 3s on first load
+const preloader = document.getElementById('preloader');
+if (preloader) {
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    preloader.classList.add('is-hidden');
+    document.body.style.overflow = '';
+  }, 3000);
+}
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 

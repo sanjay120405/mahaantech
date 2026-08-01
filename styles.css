@@ -432,18 +432,25 @@ h1, h2, h3, h4 {
 
 /* phone mockups */
 .phone-row {
-  display: flex;
-  gap: 24px;
   overflow: hidden;
   padding: 10px 0 20px;
   mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
 }
-.phone-track { display: flex; gap: 24px; width: max-content; animation: phone-scroll 22s linear infinite; }
+.phone-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  will-change: transform;
+  animation: phone-scroll 22s linear infinite;
+}
 .phone-row:hover .phone-track { animation-play-state: paused; }
 @keyframes phone-scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(calc(-100% - 24px)); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phone-track { animation: none; }
 }
 
 .phone-mockup { flex: 0 0 220px; background: #000; border-radius: 28px; padding: 10px; box-shadow: var(--shadow-md); }
